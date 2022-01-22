@@ -709,6 +709,10 @@ main .about__container .about__text_item .about_btn:hover {
   }
 }
 @media screen and (min-width: 993px) {
+  body.left {
+    margin-left: 0;
+  }
+
   header .header__section .header__navbar .navSide {
     position: absolute;
     right: -40%;
