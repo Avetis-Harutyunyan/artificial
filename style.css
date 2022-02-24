@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 
 .title {
   font-size: 40px;
-  color: #ffffff;
+  color: white;
   font-weight: 700;
   line-height: 52px;
 }
@@ -66,8 +66,8 @@ header .header__section {
 }
 header .header__section.topNav {
   height: 70px;
-  -webkit-box-shadow: 0 0 10px #000000;
-          box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
   background-color: #020a18;
 }
 header .header__section.topNav .header__navbar {
@@ -101,7 +101,7 @@ header .header__section .header__navbar .nav-links ul {
 header .header__section .header__navbar .nav-links ul li a {
   position: relative;
   padding: 20px 20px;
-  color: #e5e5e5;
+  color: #e6e6e6;
   font-size: 16px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -111,7 +111,7 @@ header .header__section .header__navbar .nav-links ul li a::after {
   position: absolute;
   top: 100%;
   left: 50%;
-  background-color: #e5e5e5;
+  background-color: #e6e6e6;
   width: 0;
   height: 3px;
   -webkit-transform: translate(-50%, -50%);
@@ -120,7 +120,7 @@ header .header__section .header__navbar .nav-links ul li a::after {
   transition: 0.2s ease;
 }
 header .header__section .header__navbar .nav-links ul li a:hover {
-  color: #ffffff;
+  color: white;
 }
 header .header__section .header__navbar .nav-links ul li a:hover:after {
   width: 100%;
@@ -131,14 +131,14 @@ header .header__section .header__navbar .header__sign-in {
   border-radius: 5px;
   background: none;
   background-color: #3a68b8;
-  color: #e5e5e5;
+  color: #e6e6e6;
   cursor: pointer;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 header .header__section .header__navbar .header__sign-in:hover {
   background-color: #e5e5e5;
-  color: #000000;
+  color: black;
 }
 header .header__section .header__navbar .burger .line {
   width: 30px;
@@ -152,7 +152,7 @@ header .header__section .header__navbar .burger {
   cursor: pointer;
   padding: 10px;
   display: none;
-  z-index: 10;
+  z-index: 500;
 }
 header .header__section .header__navbar .burger.close .line1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 7px);
@@ -181,6 +181,7 @@ header .header__section .header__navbar .navSide {
           transform: translateX(110%);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  z-index: 100;
 }
 header .header__section .header__navbar .navSide ul {
   margin-top: 30px;
@@ -188,7 +189,7 @@ header .header__section .header__navbar .navSide ul {
 header .header__section .header__navbar .navSide ul li a {
   display: block;
   padding: 7px 0;
-  color: #e5e5e5;
+  color: #e6e6e6;
   position: relative;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -198,7 +199,7 @@ header .header__section .header__navbar .navSide ul li a::after {
   position: absolute;
   top: 100%;
   left: 50%;
-  background-color: #ffffff;
+  background-color: white;
   height: 3px;
   width: 0;
   -webkit-transition: 0.3s ease;
@@ -207,7 +208,7 @@ header .header__section .header__navbar .navSide ul li a::after {
           transform: translate(-50%, -50%);
 }
 header .header__section .header__navbar .navSide ul li a:hover {
-  color: #ffffff;
+  color: white;
 }
 header .header__section .header__navbar .navSide ul li a:hover::after {
   width: 100%;
@@ -219,14 +220,14 @@ header .header__section .header__navbar .navSide .sign-in_btn {
   border-radius: 5px;
   background: none;
   background-color: #3a68b8;
-  color: #e5e5e5;
+  color: #e6e6e6;
   cursor: pointer;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 header .header__section .header__navbar .navSide .sign-in_btn:hover {
   background-color: #e5e5e5;
-  color: #000000;
+  color: black;
 }
 header .header__section .header__navbar .navSide.active {
   -webkit-transform: translateX(0);
@@ -255,12 +256,12 @@ header .header__info_container .info__text_item .info__title {
   margin-top: 10px;
   font-size: 55px;
   font-weight: 800;
-  color: #ffffff;
+  color: white;
   line-height: 71px;
 }
 header .header__info_container .info__text_item .info__text {
   font-size: 18px;
-  color: #e5e5e5;
+  color: #e6e6e6;
   line-height: 24px;
   margin-top: 40px;
 }
@@ -276,7 +277,7 @@ header .header__info_container .info__text_item .button__items .btn_item {
   border-radius: 5px;
   background-color: #3a68b8;
   cursor: pointer;
-  color: #e5e5e5;
+  color: #e6e6e6;
   font-size: 20px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -286,7 +287,7 @@ header .header__info_container .info__text_item .button__items .btn_item .btn__p
 }
 header .header__info_container .info__text_item .button__items .btn_item:hover {
   background-color: #e5e5e5;
-  color: #000000;
+  color: black;
 }
 header .header__info_container .info__text_item .button__items .btn_item:nth-child(2) {
   margin-left: 20px;
@@ -303,30 +304,6 @@ header .header__logo_images {
 }
 header .header__logo_images .header_logos {
   width: 100%;
-}
-
-.to_top {
-  position: fixed;
-  top: 88%;
-  right: 1%;
-  display: none;
-  z-index: 11;
-}
-.to_top a {
-  background-color: #ffffff;
-  padding: 7px 13px;
-  font-size: 20px;
-  color: #3a68b8;
-  border-radius: 5px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-.to_top a:hover {
-  background-color: #3a68b8;
-  color: #ffffff;
-}
-.to_top.active {
-  display: block;
 }
 
 main .about__section {
@@ -357,7 +334,7 @@ main .about__container .about__text_item .about_text {
   margin-top: 30px;
   font-size: 16px;
   line-height: 25px;
-  color: #e5e5e5;
+  color: #e6e6e6;
 }
 main .about__container .about__text_item .about_btn {
   margin-top: 50px;
@@ -367,13 +344,13 @@ main .about__container .about__text_item .about_btn {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: #e5e5e5;
+  color: #e6e6e6;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 main .about__container .about__text_item .about_btn:hover {
   background-color: #e5e5e5;
-  color: #000000;
+  color: black;
 }
 
 .services__section {
@@ -399,13 +376,13 @@ main .about__container .about__text_item .about_btn:hover {
 }
 .services__section .services__block_items .block__item .block__title {
   margin-top: 47px;
-  color: #ffffff;
+  color: white;
   font-weight: 700;
   font-size: 18px;
 }
 .services__section .services__block_items .block__item .block__text {
   margin-top: 30px;
-  color: #e5e5e5;
+  color: #e6e6e6;
   font-size: 16px;
   line-height: 25px;
 }
@@ -425,13 +402,13 @@ main .about__container .about__text_item .about_btn:hover {
   max-width: 580px;
 }
 .blog__section .blog__items .text__item .blog__text {
-  color: #e5e5e5;
+  color: #e6e6e6;
   font-size: 16px;
   line-height: 25px;
   margin-top: 40px;
 }
 .blog__section .blog__items .text__item .text {
-  color: #e5e5e5;
+  color: #e6e6e6;
   font-size: 16px;
   line-height: 25px;
   margin-top: 20px;
@@ -459,7 +436,7 @@ main .about__container .about__text_item .about_btn:hover {
 .footer__section .footer__block_items .footer__block {
   max-width: 280px;
   font-size: 14px;
-  color: #e5e5e5;
+  color: #e6e6e6;
   margin-left: 5px;
 }
 .footer__section .footer__block_items .footer__block .block__text {
@@ -520,7 +497,7 @@ main .about__container .about__text_item .about_btn:hover {
 .footer__section .create {
   margin-top: 70px;
   text-align: center;
-  color: #e5e5e5;
+  color: #e6e6e6;
   font-size: 15px;
 }
 .footer__section .create a {
