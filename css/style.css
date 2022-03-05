@@ -175,8 +175,7 @@ header .header__section .header__navbar .navSide {
   width: 350px;
   max-width: 100%;
   height: 100vh;
-  padding: 70px 0;
-  text-align: center;
+  padding: 70px 15px;
   -webkit-transform: translateX(110%);
           transform: translateX(110%);
   -webkit-transition: 0.3s ease-in-out;
@@ -198,17 +197,16 @@ header .header__section .header__navbar .navSide ul li a::after {
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 0;
   background-color: white;
   height: 3px;
   width: 0;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 header .header__section .header__navbar .navSide ul li a:hover {
   color: white;
+  padding-left: 7px;
 }
 header .header__section .header__navbar .navSide ul li a:hover::after {
   width: 100%;
