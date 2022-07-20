@@ -5,7 +5,7 @@ function navSide() {
     const nav = document.getElementById("navSide");
     const bodyLeft = document.querySelector("body");
 
-    bars.addEventListener("click", function () {
+    bars.addEventListener("click", function() {
         nav.classList.toggle("active");
 
         // burger animation
